@@ -1,0 +1,59 @@
+body{
+    background-image: url(kepek/hatter.jpg);
+}
+
+/*Gridelés*/
+main{
+    display: grid;
+    grid-template-areas:    "n a as"
+                            "f f f";
+    grid-template-columns: repeat(3, 1fr);
+}
+
+nav{
+    grid-area: n;
+}
+
+article{
+    grid-area: a;
+}
+
+aside{
+    grid-area: as;
+}
+
+footer{
+    grid-area: f;
+}
+/*Gridelés vége*/
+
+header{
+    background-image: url(kepek/fejlec.jpg);
+}
+
+main{
+    width: 900px;
+    max-width: 80%;
+    margin: auto;
+    background: white;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style-type: none;
+    background-color: rgb(0, 47, 255);
+    border-radius: 12px;
+    text-align: center;
+}
+
+aside{
+    border-left: 1px dotted black;
+}
+
+footer{
+    background-color: rgb(0, 47, 255);
+}
